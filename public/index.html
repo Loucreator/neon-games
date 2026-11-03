@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080711">
+  <meta name="description" content="NEON GAMES — independent games for PC and Android.">
+
+  <title>NEON GAMES — Your Games. Your World.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark">N</span>
+      <span>NEON<span class="accent"> GAMES</span></span>
+    </a>
+
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <span id="user-label" class="user-label"></span>
+      <button id="auth-open" class="btn btn-ghost">Sign in</button>
+      <button id="wallet-open" class="btn btn-ghost hidden">◆ Wallet</button>
+      <button id="admin-open" class="btn btn-primary hidden">Dashboard</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="pulse"></span>
+          INDEPENDENT GAME STUDIO
+        </div>
+
+        <h1>
+          ENTER THE<br>
+          <span class="gradient-text">NEON WORLD.</span>
+        </h1>
+
+        <p>
+          Discover original games built with passion.
+          Download, play, and join the next level.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="#games">
+            EXPLORE GAMES <span>↗</span>
+          </a>
+
+          <a class="btn btn-ghost btn-large" href="#about">
+            ABOUT THE STUDIO
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <b id="hero-game-count">0</b>
+            <span>GAMES</span>
+          </div>
+
+          <i></i>
+
+          <div>
+            <b>PC + ANDROID</b>
+            <span>PLATFORMS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+
+        <div class="core">
+          <span>NG</span>
+          <small>PLAY BEYOND</small>
+        </div>
+
+        <div class="float-tag tag-top">
+          PLAYER_01 <b>ONLINE</b>
+        </div>
+
+        <div class="float-tag tag-bottom">
+          NEXT LEVEL <b>UNLOCKED</b>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">THE COLLECTION</div>
+          <h2>DISCOVER <span class="accent">GAMES</span></h2>
+          <p class="muted">
+            Choose your platform. Find your next adventure.
+          </p>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">ALL</button>
+          <button class="filter" data-filter="windows">PC</button>
+          <button class="filter" data-filter="android">ANDROID</button>
+        </div>
+      </div>
+
+      <div id="games-grid" class="games-grid">
+        <div class="empty-state">LOADING GAME DATABASE...</div>
+      </div>
+    </section>
+
+    <section id="about" class="about-panel">
+      <div class="eyebrow">WHO WE ARE</div>
+
+      <h2>
+        BUILT BY A DEVELOPER.<br>
+        <span class="gradient-text">MADE FOR PLAYERS.</span>
+      </h2>
+
+      <p>
+        NEON GAMES is an independent publishing space for original projects.
+        Every game has its own story, updates, and community.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#">
+      <span class="brand-mark">N</span>
+      <span>NEON<span class="accent"> GAMES</span></span>
+    </a>
+
+    <span>
+      © <span id="year"></span> NEON GAMES. ALL RIGHTS RESERVED.
+    </span>
+
+    <span>POWERED BY CREATIVITY.</span>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop" data-close></div>
+
+    <div class="modal-card">
+      <button class="modal-x" data-close>×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+</body>
+</html>

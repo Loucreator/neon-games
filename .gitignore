@@ -1,0 +1,50 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Private database and user information
+data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Uploaded games and private files
+uploads/*
+!uploads/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+
+# Build and temporary files
+dist/
+build/
+.tmp/
+temp/
+
+# Local backups and one-time utility scripts
+server.backup.js
+server-postgres.before-b2.js
+check-db.js
+check-roles.js
+test-b2-upload.js
+test-b2.js
+test-db.js
+remove-neon-admin.js
+migrate-json-to-postgres.js
+migrate-uploads-to-b2.js
